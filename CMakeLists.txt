@@ -57,6 +57,12 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
 	print_default_msvc_flags()
 endif()
 
+# Fix "Could NOT find Protobuf"
+
+set(Protobuf_LIBRARIES "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg_installed/x64-windows/lib")
+set(Protobuf_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg_installed/x64-windows/include")
+find_package(protobuf REQUIRED)
+
 #
 # Primary crypto library (for AES, SHA256, etc)
 #

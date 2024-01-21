@@ -1,0 +1,1 @@
+vcpkg_installed\x64-windows\tools\protobuf\protoc.exe -I=src/common --cpp_out=src/common steamnetworkingsockets_messages.proto steamnetworkingsockets_messages_certs.proto steamnetworkingsockets_messages_udp.proto

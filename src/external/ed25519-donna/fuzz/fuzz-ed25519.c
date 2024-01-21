@@ -2,6 +2,7 @@
 	#include <windows.h>
 	#include <wincrypt.h>
 	typedef unsigned int uint32_t;
+	typedef unsigned long long uint64_t;
 #else
 	#include <stdint.h>
 #endif
