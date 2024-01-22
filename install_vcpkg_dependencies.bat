@@ -12,6 +12,6 @@ if not exist vcpkg\vcpkg.exe call vcpkg\bootstrap-vcpkg.bat -disableMetrics || e
 set VCPKG_ROOT=%cd%\vcpkg
 
 REM install required packages
-vcpkg\vcpkg.exe install --triplet x64-windows || exit /b 3
+vcpkg\vcpkg.exe install --triplet x64-windows-static-md || exit /b 3
 
 popd
